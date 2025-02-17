@@ -45,7 +45,7 @@ const Menu = () => {
           >
             Пункт 1
           </p>
-          <div
+          {/* <div
             className={`${styles.toggle} ${isOn ? styles.on : styles.off}`}
             onClick={() => handleOffOnn()}
           >
@@ -53,14 +53,7 @@ const Menu = () => {
             <span className={styles.toggleLabel}>
               {isOn ? "Включено" : "Выключено"}
             </span>
-          </div>
-          {/* <ul>
-            <li className={active ? styles.act : ""}>Пункт 1</li>
-            <li>Пункт 2</li>
-            <li>Пункт 3</li>
-            <li>Пункт 4</li>
-            <li>Пункт 5</li>
-          </ul> */}
+          </div> */}
         </div>
       </div>
     </>
