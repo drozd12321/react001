@@ -1,0 +1,6 @@
+.App {
+  display: flex;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+}
