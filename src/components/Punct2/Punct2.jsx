@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Punct2.module.css";
 import Menu from "../Menu/Menu";
 import useStateManager from "../../stateManager/stateManager";
+import TgId from "../TgId/TgId";
 const Punct2 = () => {
   const [file, setFile] = useState(null);
   const [idTg, setIdTg] = useState("");
@@ -53,6 +54,7 @@ const Punct2 = () => {
           />
           <button onClick={SentVueIdTG}>Посмотреть канал</button>
         </div>
+        {activeVue ? <TgId /> : ""}
       </div>
     </div>
   );

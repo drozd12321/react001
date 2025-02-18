@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const useStateManager = create((set) => ({
-  activeMenu: null,
+  activeMenu: "Пункт 1",
   activeVue: false,
   setActiveMenu: (item) =>
     set({
