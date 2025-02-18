@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 import styles from "./App.module.css";
 import Home from "./components/Home/Home";
 import { Routes, Route } from "react-router-dom";
@@ -8,9 +9,9 @@ import Punct4 from "./components/Punct4/Punct4";
 import Punct5 from "./components/Punct5/Punct5";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [anim] = useAutoAnimate();
   return (
-    <>
+    <div ref={anim}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Punct2" element={<Punct2 />} />
@@ -18,7 +19,7 @@ function App() {
         <Route path="/Punct4" element={<Punct4 />} />
         <Route path="/Punct5" element={<Punct5 />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

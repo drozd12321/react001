@@ -7,7 +7,17 @@ const TgId = () => {
       <div className={styles.itemImg}>
         <img src={logo} alt="" />
       </div>
-      <div className={styles.itemInf}></div>
+      <div className={styles.itemInf}>
+        <div className={styles.inf}>
+          <p>Информация</p>
+        </div>
+        <div className={styles.inf}>
+          <p>Информация</p>
+        </div>
+        <div className={styles.inf}>
+          <p>Информация</p>
+        </div>
+      </div>
     </div>
   );
 };

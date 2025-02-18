@@ -21,3 +21,16 @@
   border-radius: 20px;
   background-color: #af0cc5;
 }
+.inf {
+  width: 40rem;
+  border: 1px solid black;
+  height: 2rem;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.inf p {
+  font-size: 20px;
+}

@@ -1,6 +1,6 @@
 .inf {
-  width: 43rem;
-  height: 25rem;
+  width: 53rem;
+  height: 30rem;
   border: 3px solid #2121c5;
   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
   background-color: white;
@@ -11,11 +11,11 @@
   cursor: pointer;
 }
 .inf h3 {
-  font-size: 30px;
+  font-size: 37px;
 }
 .statistic {
-  width: 37rem;
-  height: 3rem;
+  width: 40rem;
+  height: 4rem;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: #2121c5;
@@ -23,6 +23,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 24px;
   color: white;
 }

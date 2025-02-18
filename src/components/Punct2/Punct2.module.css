@@ -16,7 +16,7 @@
 }
 .uppload {
   margin-top: 20px;
-  width: 45rem;
+  width: 50rem;
   height: 3rem;
   border: 1px solid black;
   border-radius: 10px;
@@ -24,6 +24,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  padding: 5px;
 }
 .uppload button {
   background-color: #2121c5;
@@ -36,13 +37,14 @@
 }
 .uppload input {
   background-color: rgb(255, 255, 255);
-  padding: 8px;
+  padding: 5px;
   border-radius: 10px;
   font-size: 20px;
   margin-right: 10px;
+  border: none;
 }
 .uppload button:hover {
-  background-color: #2d2d8f;
+  background-color: #1c255a;
 }
 .prosmotr {
   margin-top: 20px;
@@ -62,7 +64,7 @@
   width: 400px;
   border-radius: 10px;
   outline: none;
-  border: 1px solid black;
+  border: none;
 }
 .prosmotr button {
   background-color: #2121c5;
@@ -72,4 +74,7 @@
   border-radius: 10px;
   font-size: 20px;
   transition: all 0.3s ease;
+}
+.prosmotr button:hover {
+  background-color: #1c255a;
 }
