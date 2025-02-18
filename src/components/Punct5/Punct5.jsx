@@ -1,18 +1,15 @@
 import React from "react";
+import styles from "./Punct5.module.css";
 import Menu from "../Menu/Menu";
-import styles from "./Home.module.css";
-import Glavn from "../Glavn/Glavn";
-const Home = () => {
+const Punct5 = () => {
   return (
     <div className={styles.container}>
       <div className={styles.menu}>
         <Menu />
       </div>
-      <div className={styles.item}>
-        <Glavn />
-      </div>
+      <div className={styles.item}>5</div>
     </div>
   );
 };
 
-export default Home;
+export default Punct5;
