@@ -3,13 +3,9 @@ import { create } from "zustand";
 const useStateManager = create((set) => ({
   select: "setActions",
   SetSelect: (action) =>
-    set((state) => {
-      if (state.select != "setActions") {
-        return { select: action };
-      } else {
-        return { state };
-      }
-    }),
+    set((state) => ({
+      select: action,
+    })),
   checked: [],
   SetChecked: (id) =>
     set((state) => {
