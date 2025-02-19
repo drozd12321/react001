@@ -28,6 +28,7 @@ const Cartitemtg = () => {
             <div>Что то</div>
             <div>Что то еще</div>
             <div>Что то еще</div>
+            <div>Что то еще</div>
           </div>
           {dataInf.info && dataInf.info.length > 0 ? (
             dataInf.info.map((iteminf) => (

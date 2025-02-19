@@ -9,6 +9,7 @@ const CartUserId = (props) => {
       <div>{props.param}</div>
       <div>{props.param1}</div>
       <div>{props.param2}</div>
+      <div>{props.param3}</div>
     </div>
   );
 };

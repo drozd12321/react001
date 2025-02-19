@@ -20,7 +20,7 @@ h2 {
 .header {
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 2fr);
 }
 .header > div {
   padding: 10px;
