@@ -40,7 +40,7 @@ export const statistica = [
 ];
 export const dataTg = [
   {
-    name: "Название",
+    name: "Базвание",
     sl: "https://github.com/drozd12321/React-Typescript/blob/main/src/components/PizzaItem/PizzaItem.tsx",
     id: 1,
     info: [
@@ -101,13 +101,13 @@ export const dataTg = [
     ],
   },
   {
-    name: "Название",
+    name: "Аазвание",
     sl: "https://github.com/drozd12321/React-Typescript/blob/main/src/components/PizzaItem/PizzaItem.tsx",
     id: 2,
     info: [
       {
         id: 5,
-        nam: "ff654ff",
+        nam: "12f",
         silc: "https://github.com/drozd12321/",
         param: "fsdhdfdf",
         param1: "1sdhdfdf",
@@ -116,11 +116,11 @@ export const dataTg = [
       },
       {
         id: 6,
-        nam: "f543fff",
+        nam: "f543f",
         silc: "https://github.com/drozd12321/",
         param: "fsdhdfdf",
         param1: "1sdhdfdf",
-        param2: "2sdhdfdf",
+        param2: "dhdfdsfdf",
         param3: "2sdhdfdf",
       },
       {
@@ -162,7 +162,7 @@ export const dataTg = [
     ],
   },
   {
-    name: "Название",
+    name: "Вазвание",
     sl: "https://github.com/drozd12321/React-Typescript/blob/main/src/components/PizzaItem/PizzaItem.tsx",
     id: 3,
     info: [
@@ -223,7 +223,7 @@ export const dataTg = [
     ],
   },
   {
-    name: "Название",
+    name: "Уазвание",
     sl: "https://github.com/drozd12321/React-Typescript/blob/main/src/components/PizzaItem/PizzaItem.tsx",
     id: 4,
     info: [
@@ -284,7 +284,7 @@ export const dataTg = [
     ],
   },
   {
-    name: "Название",
+    name: "Развание",
     sl: "https://github.com/drozd12321/React-Typescript/blob/main/src/components/PizzaItem/PizzaItem.tsx",
     id: 5,
     info: [
@@ -345,7 +345,7 @@ export const dataTg = [
     ],
   },
   {
-    name: "Название",
+    name: "Пазвание",
     sl: "https://github.com/drozd12321/React-Typescript/blob/main/src/components/PizzaItem/PizzaItem.tsx",
     id: 6,
     info: [
@@ -406,7 +406,7 @@ export const dataTg = [
     ],
   },
   {
-    name: "Название",
+    name: "Кзвание",
     sl: "https://github.com/drozd12321/React-Typescript/blob/main/src/components/PizzaItem/PizzaItem.tsx",
     id: 7,
     info: [
@@ -467,7 +467,7 @@ export const dataTg = [
     ],
   },
   {
-    name: "Название",
+    name: "Еазвание",
     sl: "https://github.com/drozd12321/React-Typescript/blob/main/src/components/PizzaItem/PizzaItem.tsx",
     id: 8,
     info: [
@@ -528,7 +528,7 @@ export const dataTg = [
     ],
   },
   {
-    name: "Название",
+    name: "Дазвание",
     sl: "https://github.com/drozd12321/React-Typescript/blob/main/src/components/PizzaItem/PizzaItem.tsx",
     id: 9,
     info: [
@@ -589,7 +589,7 @@ export const dataTg = [
     ],
   },
   {
-    name: "Название",
+    name: "Лазвание",
     sl: "https://github.com/drozd12321/React-Typescript/blob/main/src/components/PizzaItem/PizzaItem.tsx",
     id: 10,
     info: [

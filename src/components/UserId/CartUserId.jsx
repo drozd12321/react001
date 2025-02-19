@@ -3,13 +3,13 @@ import styles from "./CartUserId.module.css";
 const CartUserId = (props) => {
   return (
     <div className={styles.container}>
-      <div>{props.id}</div>
-      <div>{props.nam}</div>
-      <div>{props.silc}</div>
-      <div>{props.param}</div>
-      <div>{props.param1}</div>
-      <div>{props.param2}</div>
-      <div>{props.param3}</div>
+      <div className={styles.item}>{props.id}</div>
+      <div className={styles.item}>{props.nam}</div>
+      <div className={styles.item}>{props.silc}</div>
+      <div className={styles.item}>{props.param}</div>
+      <div className={styles.item}>{props.param1}</div>
+      <div className={styles.item}>{props.param2}</div>
+      <div className={styles.item}>{props.param3}</div>
     </div>
   );
 };

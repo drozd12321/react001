@@ -57,6 +57,7 @@
   border-radius: 10px;
   outline: none;
   border: none;
+  font-size: 20px;
 }
 .chld input::placeholder {
   font-size: 20px;

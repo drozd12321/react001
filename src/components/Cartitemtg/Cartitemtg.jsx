@@ -21,15 +21,6 @@ const Cartitemtg = () => {
       <div className={styles.container}>
         <h2>Участники</h2>
         <div className={styles.grid}>
-          <div className={styles.header}>
-            <div>id</div>
-            <div>Имя</div>
-            <div>Ссылка</div>
-            <div>Что то</div>
-            <div>Что то еще</div>
-            <div>Что то еще</div>
-            <div>Что то еще</div>
-          </div>
           {dataInf.info && dataInf.info.length > 0 ? (
             dataInf.info.map((iteminf) => (
               <CartUserId key={iteminf.id} {...iteminf} />
