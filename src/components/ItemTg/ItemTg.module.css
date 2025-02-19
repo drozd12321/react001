@@ -1,0 +1,20 @@
+.itemtg {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #2121c5;
+  width: 60vw;
+  height: 3vh;
+  padding: 20px;
+  border-radius: 10px;
+}
+input {
+  width: 20px;
+  font-size: 3em;
+  height: 20px;
+}
+
+p {
+  font-size: 25px;
+}

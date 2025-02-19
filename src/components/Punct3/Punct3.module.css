@@ -11,7 +11,7 @@
   flex-direction: column;
   background-color: rgb(255, 255, 255);
   align-items: center;
-  height: 95vh;
+  height: 900px;
 }
 .search {
   display: flex;
@@ -22,6 +22,7 @@
   padding: 10px;
   margin-top: 10px;
   border-radius: 15px;
+  margin-bottom: 40px;
 }
 .chld {
   margin: 10px;
@@ -50,14 +51,20 @@
   color: white;
   font-size: 15px;
 }
-input {
+.chld input {
   width: 36rem;
   padding: 5px;
   border-radius: 10px;
   outline: none;
   border: none;
+}
+.chld input::placeholder {
   font-size: 20px;
 }
 .itemChld button:hover {
   background-color: #1c255a;
+}
+.scroll {
+  overflow: scroll;
+  padding: 15px;
 }

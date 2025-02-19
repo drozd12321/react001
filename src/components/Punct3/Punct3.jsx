@@ -2,7 +2,9 @@ import React from "react";
 import styles from "./Punct3.module.css";
 import Menu from "../Menu/Menu";
 import ItemTg from "../ItemTg/ItemTg";
+import { dataTg } from "../../data/data";
 const Punct3 = () => {
+  console.log("fdsgggdffd");
   return (
     <div className={styles.container}>
       <div className={styles.menu}>
@@ -25,8 +27,10 @@ const Punct3 = () => {
             </div>
           </div>
         </div>
-        <div>
-          <ItemTg />
+        <div className={styles.scroll}>
+          {dataTg.map((item, ind) => (
+            <ItemTg key={ind} {...item} />
+          ))}
         </div>
       </div>
     </div>

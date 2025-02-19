@@ -37,11 +37,15 @@
 }
 .uppload input {
   background-color: rgb(255, 255, 255);
-  padding: 5px;
+  padding: 15px;
   border-radius: 10px;
   font-size: 20px;
   margin-right: 10px;
   border: none;
+  width: 30rem;
+}
+.uppload input::placeholder {
+  font-size: 10px;
 }
 .uppload button:hover {
   background-color: #1c255a;
@@ -65,6 +69,10 @@
   border-radius: 10px;
   outline: none;
   border: none;
+  font-size: 20px;
+}
+.prosmotr input::placeholder {
+  font-size: 20px;
 }
 .prosmotr button {
   background-color: #2121c5;

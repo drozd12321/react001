@@ -1,0 +1,28 @@
+.cont {
+  display: flex;
+  width: 100%;
+}
+.menu {
+  flex: 0.2;
+}
+.container {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  height: 95vh;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.header {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.header > div {
+  padding: 10px;
+  border: 1px solid rgb(5, 5, 5);
+}
