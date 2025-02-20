@@ -1,6 +1,6 @@
-import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-import styles from "./App.module.css";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 import Home from "./components/Home/Home";
 import { Routes, Route } from "react-router-dom";
 import Punct2 from "./components/Punct2/Punct2";
@@ -26,6 +26,7 @@ function App() {
         <Route path="/Punct4" element={<Punct4 />} />
         <Route path="/Punct5" element={<Punct5 />} />
       </Routes>
+      <ToastContainer />
     </div>
   );
 }

@@ -4,6 +4,29 @@ import Menu from "../Menu/Menu";
 import ItemTg from "../ItemTg/ItemTg";
 import { dataTg } from "../../data/data";
 import useStateManager from "../../stateManager/stateManager";
+const notifyWithCancel = () => {
+  const toastId = toast.info(
+    <div>
+      <p>
+        Вы уверены, что хотите продолжить? Это действие нельзя будет отменить!
+      </p>
+      <button onClick={() => handleConfirm(toastId)}>Да</button>
+      <button onClick={() => toast.dismiss(toastId)}>Нет</button>
+    </div>,
+    {
+      autoClose: false,
+      closeButton: false,
+    }
+  );
+};
+
+const handleConfirm = (toastId) => {
+  // Здесь выполняем действие при подтверждении
+  toast.dismiss(toastId); // Закрываем уведомление
+  toast.success("Действие выполнено!");
+  console.log("Действие подтверждено");
+};
+
 const Punct3 = () => {
   const { checked, select, SetSelect } = useStateManager();
   const [search, setSearch] = useState("");
@@ -22,7 +45,7 @@ const Punct3 = () => {
   };
   function SetActionServer() {
     if (checked) {
-      alert("Вы уверены что хотите удалить канал");
+      notifyWithCancel();
       console.log("отправляем на сервер");
     }
   }
