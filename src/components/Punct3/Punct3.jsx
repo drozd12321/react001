@@ -22,6 +22,7 @@ const Punct3 = () => {
   };
   function SetActionServer() {
     if (checked) {
+      alert("Вы уверены что хотите удалить канал");
       console.log("отправляем на сервер");
     }
   }
