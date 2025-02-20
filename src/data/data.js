@@ -650,3 +650,63 @@ export const dataTg = [
     ],
   },
 ];
+export const userDT = [
+  {
+    id: 5,
+    name: "User",
+    nik: "nik",
+    fam: "hhh",
+    tel: 999,
+    lin: "hhhh",
+  },
+  {
+    id: 6,
+    name: "User",
+    nik: "nik",
+    fam: "hhh",
+    tel: 999,
+    lin: "hhhh",
+  },
+  {
+    id: 7,
+    name: "User",
+    nik: "nik",
+    fam: "hhh",
+    tel: 999,
+    lin: "hhhh",
+  },
+  {
+    id: 8,
+    name: "User",
+    nik: "nik",
+    fam: "hhh",
+    tel: 999,
+    lin: "hhhh",
+  },
+  {
+    id: 9,
+    name: "User",
+    nik: "nik",
+    fam: "hhh",
+    tel: 999,
+    lin: "hhhh",
+  },
+  {
+    id: 10,
+    name: "User",
+    nik: "nik",
+    fam: "hhh",
+    tel: 999,
+    lin: "hhhh",
+  },
+];
+
+export const chanal = [
+  {
+    id: 1,
+    title: "fggf",
+    link: "dsf",
+    msgcount: 54,
+    isAdm: false,
+  },
+];

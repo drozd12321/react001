@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./ItemTg.module.css";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import useStateManager from "../../stateManager/stateManager";
 const ItemTg = ({ name, id, sl }) => {
   const { SetChecked } = useStateManager();

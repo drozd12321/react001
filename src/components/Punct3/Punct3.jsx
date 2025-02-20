@@ -20,9 +20,8 @@ const Punct3 = () => {
       setFilterData(value);
     }
   };
-  function SetCheckedServer() {
+  function SetActionServer() {
     if (checked) {
-      console.log(checked);
       console.log("отправляем на сервер");
     }
   }
@@ -48,14 +47,16 @@ const Punct3 = () => {
                 name="action"
                 id="action"
                 value={select}
-                onChange={SetSelect}
+                onChange={(e) => {
+                  SetSelect(e.target.value);
+                }}
               >
                 <option value="setActions">Выберите действие</option>
                 <option value="actionsDel">действие</option>
               </select>
             </div>
             <div>
-              <button onClick={SetCheckedServer}>Применить</button>
+              <button onClick={SetActionServer}>Применить</button>
             </div>
           </div>
         </div>
