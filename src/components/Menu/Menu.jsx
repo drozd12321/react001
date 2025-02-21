@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import styles from "./Menu.module.css";
 import { menu } from "../../data/data";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useStateManager from "../../stateManager/stateManager";
 const Menu = () => {
-  const [active, setActive] = useState(0);
   const [isOn, SetIsOn] = useState(false);
-  function handleActive(num) {
-    setActive(num);
-  }
   function handleOffOnn() {
     SetIsOn(!isOn);
   }
   const { activeMenu, setActiveMenu } = useStateManager();
+  const location = useLocation();
+  // console.log(location.pathname);
+  function SetCheckedActive(item, locate) {
+    setActiveMenu(location.pathname);
+  }
+  console.log(activeMenu);
   return (
     <>
       <div className={styles.siteBar}>
@@ -22,10 +24,10 @@ const Menu = () => {
             <Link to={item.path} key={ind}>
               <div
                 className={`${styles.inf} ${
-                  activeMenu === item.text ? styles.act : ""
+                  activeMenu === location ? styles.act : ""
                 }`}
                 key={ind}
-                onClick={() => setActiveMenu(item.text)}
+                onClick={() => SetCheckedActive(item.text, location)}
               >
                 {item.text}
               </div>

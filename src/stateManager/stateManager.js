@@ -17,7 +17,7 @@ const useStateManager = create((set) => ({
         return { checked: [...state.checked, id] };
       }
     }),
-  activeMenu: "Пункт 1",
+  activeMenu: "/",
   activeVue: false,
   setActiveMenu: (item) =>
     set({
