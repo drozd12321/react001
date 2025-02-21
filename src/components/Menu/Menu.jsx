@@ -11,8 +11,8 @@ const Menu = () => {
   const { activeMenu, setActiveMenu } = useStateManager();
   const location = useLocation();
   // console.log(location.pathname);
-  function SetCheckedActive(item, locate) {
-    setActiveMenu(location.pathname);
+  function SetCheckedActive(locate) {
+    setActiveMenu(locate);
   }
   console.log(activeMenu);
   return (
@@ -24,10 +24,13 @@ const Menu = () => {
             <Link to={item.path} key={ind}>
               <div
                 className={`${styles.inf} ${
-                  activeMenu === location ? styles.act : ""
+                  (item.path === "/" && location.pathname === "/") ||
+                  (item.path !== "/" && location.pathname.startsWith(item.path))
+                    ? styles.act
+                    : ""
                 }`}
                 key={ind}
-                onClick={() => SetCheckedActive(item.text, location)}
+                // onClick={() => SetCheckedActive(location.pathname)}
               >
                 {item.text}
               </div>
