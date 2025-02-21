@@ -19,15 +19,17 @@ const Menu = () => {
         <h2>Меню</h2>
         <div>
           {menu.map((item, ind) => (
-            <div
-              className={`${styles.inf} ${
-                activeMenu === item.text ? styles.act : ""
-              }`}
-              key={ind}
-              onClick={() => setActiveMenu(item.text)}
-            >
-              <Link to={item.path}>{item.text}</Link>
-            </div>
+            <Link to={item.path} key={ind}>
+              <div
+                className={`${styles.inf} ${
+                  activeMenu === item.text ? styles.act : ""
+                }`}
+                key={ind}
+                onClick={() => setActiveMenu(item.text)}
+              >
+                {item.text}
+              </div>
+            </Link>
           ))}
           <p
             className={`${styles.start} ${isOn ? styles.on : ""}`}

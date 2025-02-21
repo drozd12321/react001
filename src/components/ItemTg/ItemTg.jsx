@@ -15,7 +15,7 @@ const ItemTg = ({ name, id, sl }) => {
         />
       </div>
       <div>
-        <Link to={`/cartitemtg/${id}`}>
+        <Link to={`cartitemtg/${id}`}>
           <p>{name}</p>
         </Link>
       </div>

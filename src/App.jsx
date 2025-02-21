@@ -10,6 +10,7 @@ import Punct5 from "./components/Punct5/Punct5";
 import Cartitemtg from "./components/Cartitemtg/Cartitemtg";
 import MainLayout from "./layouts/MainLayout";
 import User from "./components/User/User";
+import MessageUser from "./components/MessageUser/MessageUser";
 
 function App() {
   const [anim] = useAutoAnimate();
@@ -18,10 +19,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Punct2" element={<Punct2 />} />
-        <Route path="/Punct3" element={<Punct3 />} />
-        <Route path="/cartitemtg/:id/" element={<MainLayout />}>
-          <Route index={true} element={<Cartitemtg />} />
-          <Route path="userid/:usid" element={<User />} />
+        <Route path="/Punct3" element={<MainLayout />}>
+          <Route index={true} element={<Punct3 />} />
+          <Route path="cartitemtg/:id/" element={<Cartitemtg />} />
+          <Route path="cartitemtg/:id/userid/:usid" element={<User />} />
+          <Route
+            path="cartitemtg/:id/userid/:usid/message/:tg"
+            element={<MessageUser />}
+          />
         </Route>
         <Route path="/Punct4" element={<Punct4 />} />
         <Route path="/Punct5" element={<Punct5 />} />

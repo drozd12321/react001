@@ -2,10 +2,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
   border: 3px solid #2121c5;
   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  width: 50rem;
-  padding: 8px;
+  width: 70rem;
+  padding: 2px;
 }

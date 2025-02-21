@@ -17,3 +17,6 @@ h2 {
   font-size: 30px;
   font-weight: 400;
 }
+.grid {
+  overflow-y: scroll;
+}

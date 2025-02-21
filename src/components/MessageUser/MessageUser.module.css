@@ -2,4 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.masg h3 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.infmsg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100rem;
+  border: 3px solid #2121c5;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+  height: 4rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }

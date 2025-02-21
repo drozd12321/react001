@@ -4,6 +4,7 @@ import Menu from "../Menu/Menu";
 import CartUserId from "../UserId/CartUserId";
 import { Outlet, useParams } from "react-router-dom";
 import { dataTg } from "../../data/data";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 const Cartitemtg = () => {
   const { id } = useParams();
   //отправляем id на сервер и получаем участников
@@ -23,7 +24,6 @@ const Cartitemtg = () => {
           ) : (
             <div>Нет данных</div>
           )}
-          <Outlet />
         </div>
       </div>
     </div>

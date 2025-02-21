@@ -1,20 +1,23 @@
 import React from "react";
 import styles from "./MessageUser.module.css";
-import { Outlet, useParams } from "react-router-dom";
-import { dataTg } from "../../data/data";
-import Msg from "../Msg/Msg";
+import { useParams } from "react-router-dom";
+import { message } from "../../data/data";
 const MessageUser = () => {
-  const dataMessageUser = dataTg.filter((item) => {
+  const { usid, tg } = useParams();
+  const msg = message.filter((item) => {
     return item.id === Number(usid);
   });
-  console.log(dataMessageUser.info);
+  console.log(msg[0]);
   return (
-    <div>
-      <h3>Сообщения</h3>
-      <div className={styles.masg}>
-        {dataMessageUser.map((item, ind) => {
-          <Msg key={ind} {...item} />;
-        })}
+    <div className={styles.masg}>
+      <h3>Сообщения пользователя {usid}</h3>
+      <div className={styles.scroll}>
+        {msg[0].msg.map((masg, ind) => (
+          <div key={ind} className={styles.infmsg}>
+            <div>{masg.inf}</div>
+            <div>{masg.tm}</div>
+          </div>
+        ))}
       </div>
     </div>
   );

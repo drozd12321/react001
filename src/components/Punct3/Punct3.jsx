@@ -52,9 +52,9 @@ const Punct3 = () => {
   console.log(select);
   return (
     <div className={styles.container}>
-      <div className={styles.menu}>
+      {/* <div className={styles.menu}>
         <Menu />
-      </div>
+      </div> */}
       <div className={styles.item}>
         <div className={styles.search}>
           <div className={styles.chld}>
