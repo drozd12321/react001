@@ -7,15 +7,15 @@ import UserInf from "./UserInf/UserInf";
 import ChanalInf from "./ChahalInf/ChanalInf";
 const User = () => {
   const { usid } = useParams();
-  console.log(usid);
   //отпавляем запрос на пользователя и на каналы
-  const dataUs = userDT.filter((item) => item.id === Number(usid));
+  const dataUs = userDT.find((item) => item.id === Number(usid));
+
   console.log(chanal);
   return (
     <div className={styles.container}>
-      <h2>Пользователь {dataUs[0].id}</h2>
+      <h2>Пользователь {dataUs.id}</h2>
       <div className={styles.userinf}>
-        <UserInf {...dataUs[0]} />
+        <UserInf {...dataUs} />
       </div>
       <div className={styles.chinf}>
         <h2>Каналы</h2>

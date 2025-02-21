@@ -28,8 +28,17 @@ function App() {
             element={<MessageUser />}
           />
         </Route>
-        <Route path="/Punct4" element={<Punct4 />} />
-        <Route path="/Punct5" element={<Punct5 />} />
+        <Route path="/Punct4" element={<MainLayout />}>
+          <Route index={true} element={<Punct4 />} />
+          <Route path="userid/:usid" element={<User />} />
+          <Route path="userid/:usid/message/:tg" element={<MessageUser />} />
+        </Route>
+        {/* <Route path="/Punct5" element={<Punct5 />} /> */}
+        <Route path="/Punct5" element={<MainLayout />}>
+          <Route index={true} element={<Punct5 />} />
+          <Route path="userid/:usid" element={<User />} />
+          <Route path="userid/:usid/message/:tg" element={<MessageUser />} />
+        </Route>
       </Routes>
       <ToastContainer />
     </div>

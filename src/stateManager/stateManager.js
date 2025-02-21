@@ -17,12 +17,8 @@ const useStateManager = create((set) => ({
         return { checked: [...state.checked, id] };
       }
     }),
-  activeMenu: "/",
+
   activeVue: false,
-  setActiveMenu: (item) =>
-    set({
-      activeMenu: item,
-    }),
   SetActiveVue: () =>
     set((state) => ({
       activeVue: !state.activeVue,

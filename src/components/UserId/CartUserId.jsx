@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./CartUserId.module.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 const CartUserId = (props) => {
   return (
     <div className={styles.container}>
@@ -12,7 +12,6 @@ const CartUserId = (props) => {
       <div className={styles.item}>{props.param}</div>
       <div className={styles.item}>{props.param1}</div>
       <div className={styles.item}>{props.param2}</div>
-      <div className={styles.item}>{props.param3}</div>
       <div className={styles.item}>{props.param3}</div>
     </div>
   );

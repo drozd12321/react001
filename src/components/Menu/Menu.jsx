@@ -8,13 +8,6 @@ const Menu = () => {
   function handleOffOnn() {
     SetIsOn(!isOn);
   }
-  const { activeMenu, setActiveMenu } = useStateManager();
-  const location = useLocation();
-  // console.log(location.pathname);
-  function SetCheckedActive(locate) {
-    setActiveMenu(locate);
-  }
-  console.log(activeMenu);
   return (
     <>
       <div className={styles.siteBar}>
@@ -30,7 +23,6 @@ const Menu = () => {
                     : ""
                 }`}
                 key={ind}
-                // onClick={() => SetCheckedActive(location.pathname)}
               >
                 {item.text}
               </div>

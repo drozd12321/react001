@@ -10,7 +10,7 @@ const ChanalInf = (item) => {
       </p>
       <p>{item.title}</p>
       <p>{item.link}</p>
-      <p>{`${item.msgcount}`}</p>
+      <p>{`${item.msgcount} ${item.isAdm ? "(Админ)" : ""}`}</p>
     </div>
   );
 };
